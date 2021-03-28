@@ -47,7 +47,7 @@ repos.map((x, i) => (
         <div class="absolute opacity-0 hover:opacity-50 hover:bg-white dark:bg-gray-500">
        <span class="text-3xl font-bold text-black tracking-wider dark:text-white leading-relaxed font-sans">{x.path}</span> 
        <div class="pt-8 text-center">
-           <button  onClick={()=>document.location='/blogs#'+x.url.split('trees/')[1]} class="text-center rounded-lg p-4 bg-black dark:bg-white text-gray-700 text-white font-bold text-lg">More</button>
+           <button  onClick={()=>document.location='/blogs/'+x.path+'/#'+x.url.split('trees/')[1]} class="text-center rounded-lg p-4 bg-black dark:bg-white text-gray-700 text-white font-bold text-lg">More</button>
            </div>
     </div>
     </div>

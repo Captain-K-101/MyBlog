@@ -39,13 +39,12 @@ repos?.map((x, i) => (
           <Tilt scale={1.1}>
           <a href={"/test#"+x.sha}>
             <div
-              onClick={() => alert("clicked " + i)}
               class="p-4 hover:scale:125"
             >
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="https://dummyimage.com/720x400"
+                  class="lg:h-auto md:h-auto w-auto object-cover object-center"
+                  src={"https://github.com/Captain-K-101/testrepo/blob/main/"+window.location.pathname.split('blogs/')[1].split('/')[0]+"/"+window.location.pathname.split('blogs/')[1].split('/')[0]+".png?raw=true"?"https://github.com/Captain-K-101/testrepo/blob/main/"+window.location.pathname.split('blogs/')[1].split('/')[0]+"/"+window.location.pathname.split('blogs/')[1].split('/')[0]+".png?raw=true":"https://dummyimage.com/720x400"}
                   alt="blog"
                 />
                 <div class="p-6">
