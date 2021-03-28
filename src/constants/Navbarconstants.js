@@ -1,6 +1,11 @@
 
 export const aboutme=[
-    'Web DEVELOPERS',
+    'HEY A SHORT ABOUT ME -->',
+    'I am a',
     'Web Security Engineer',
-    'Bug bounty hunter'
+    'Web Developer',
+    'Bug bounty hunter',
+    'CS UnderGrad',
+    ' AND ',
+    'BATMAN'
 ]
