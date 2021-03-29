@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/">
-        <div className="mx-8">
+        <div className="px-8 mx-2 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600" style={{"text-align": "left"}}>
           <Presenter />
           </div>
       <div className="underline text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl" align="center"> PROJECTS</div>

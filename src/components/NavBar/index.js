@@ -1,16 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import image1 from "../../assets/logo.png";
 import useDarkmode from "../../hooks/useDarkmode"; 
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  const [click, setclick] = useState(false);
 
  // useDarkmode();
   return (
     <>
-    <div className=" rounded-2xl">
+    <div className="rounded-2xl">
       <header class="fixed bg-white w-full dark:bg-black" style={{"z-index": "1"}}>
-        <nav class="bg-gray-600 dark:bg-gray-800  shadow mx-6 mt-2 rounded-xl">
+        <nav class="bg-gray-600 dark:bg-gray-800  shadow md:mx-6 mt-2 rounded-xl">
           <div class="max-w-7xl mx-auto px-8">
             <div class="flex items-center justify-between h-16">
               <div class="w-full justify-between flex items-center">
@@ -52,7 +53,7 @@ const Index = () => {
                 <div class="ml-4 flex items-center md:ml-6"></div>
               </div>
               <div class="-mr-2 flex md:hidden">
-                <button class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                <button onClick={()=>{setclick(!click)}} class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
                   <svg
                     width="20"
                     height="20"
@@ -67,13 +68,13 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div class="md:hidden">
+          <div class={click?"md:hidden":"hidden"}>
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 href="/#"
               >
-                Home
+                Homee
               </a>
               <a
                 class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"

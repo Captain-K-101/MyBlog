@@ -28,7 +28,7 @@ useEffect(() => {
         {" "}
         CTF'S
       </div>
-      <section class="text-gray-600 body-font grid grid-cols-4 gap-4 mx-10">
+      <section class="text-gray-600 body-font md:grid md:grid-cols-4 gap-4 mx-10">
 {
 repos.map((x, i) => (
 <div class="py-4 ">

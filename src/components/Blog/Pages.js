@@ -19,9 +19,8 @@ const Pages = () => {
   }, []);
   return (
       <>
-    <div class="content pt-20 mx-8 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100
- overflow-x-hidden dark:bg-black">
-      <div class="mx-5 text-black dark:text-white"><Markdown plugins={[gfm]} allowDangerousHtml source={data} /></div>
+    <div class="content pt-20 pl-6 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 odark:bg-black " style={{"height": "100%","overflow": "hidden !important","width": "100%"}}>
+      <div class="container mx-auto text-black dark:text-white object-scale-down "><Markdown plugins={[gfm]} allowDangerousHtml source={data} /></div>
     </div>
     </>
   );
