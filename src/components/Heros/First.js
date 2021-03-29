@@ -3,7 +3,7 @@ import React from "react";
 const First = () => {
   return (
       <>
-        <div class="md:flex my-10 dark:bg-gray-500 rounded-l-3xl">
+        <div class="md:flex my-10 mx-6 dark:bg-gray-500 rounded-l-3xl">
             <div class="flex items-center justify-center w-full px-6 py-8 md:h-128 md:w-1/2">
                 <div class="max-w-xl">
                     <h2 class="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">SSRF-<span class="text-indigo-600 dark:text-indigo-300">LABS</span></h2>

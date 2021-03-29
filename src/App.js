@@ -9,6 +9,7 @@ import useDarkmode from "./hooks/useDarkmode";
 import { Route, Switch } from "react-router-dom";
 import CtfCards from './components/Cards/CtfCards'
 import {useState,useEffect} from 'react'
+import Presenter from './components/Heros/Presenter'
 
 function App() {
   //  useDarkmode();
@@ -19,7 +20,9 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <Banner />
+        <div className="mx-8">
+          <Presenter />
+          </div>
       <div className="underline text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl" align="center"> PROJECTS</div>
           <First />
           <Firstleft/>

@@ -33,7 +33,7 @@ const Banner = () => {
     }, [buttondo])
   return (
     <>
-      <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex flex-col items-center justify-center min-h-screen mx-4 -mt-2 dark:bg-black">
+      <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex flex-col items-center justify-center min-h-screen mx-8 -mt-2 dark:bg-black">
         <h1 className="text-4xl font-bold text-white">
           Nikhil Nair <br />
           <span class="mx-10">a.k.a</span>
