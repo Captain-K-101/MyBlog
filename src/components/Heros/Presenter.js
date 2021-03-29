@@ -35,7 +35,7 @@ const Presenter = () => {
       <ScrollPage page={5}>
         <div style={FlexCenterStyle}>
           <span style={{ fontSize: "3em" }}>
-            <Animator  animation={MoveOut(1000, -0)}><div className="text-4xl">Web Developer🌐</div></Animator>
+            <Animator  animation={MoveIn(1000, 0)}><div className="text-4xl">Web Developer🌐</div></Animator>
           </span>
         </div>
       </ScrollPage>
