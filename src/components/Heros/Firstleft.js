@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Firstleft = () => {
+const Firstleft = (props) => {
     return (
         <>
-        <div class="md:flex my-10 dark:bg-gray-500 rounded-r-3xl mx-6">
+        <div class={props?.a?"md:flex my-10 bg-white mx-6 dark:bg-gray-500 rounded-3xl flex-row-reverse":"md:flex my-10 bg-white mx-6 dark:bg-gray-500 rounded-3xl "}>
             <div class="w-full h-64 md:w-1/2 md:h-auto">
                 <div class="w-full h-full bg-cover" style={{"background-image": `url("https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80")`}}>
                     <div class="w-full h-full bg-black opacity-25"></div>

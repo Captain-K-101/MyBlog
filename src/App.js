@@ -10,6 +10,7 @@ import { Route, Switch } from "react-router-dom";
 import CtfCards from './components/Cards/CtfCards'
 import {useState,useEffect} from 'react'
 import Presenter from './components/Heros/Presenter'
+import StlCards from './components/Cards/StlCards'
 
 function App() {
   
@@ -18,14 +19,14 @@ function App() {
   
   return (
     <>
-    <div class="dark:bg-black">
+    <div class="dark:bg-black bg-gradient-to-r from-gray-700 via-gray-900 to-black">
       <NavBar />
       <Switch>
         <Route exact path="/">
-        <div className="px-8 mx-2 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600" style={{"text-align": "left"}}>
+        <div className="px-8 mx-2 text-white" style={{"text-align": "left"}}>
           <Presenter />
           </div>
-      <div className="underline text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl" align="center"> PROJECTS</div>
+      <div className="underline text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl " align="center"> PROJECTS</div>
           <First />
           <Firstleft/>
           <CtfCards/>
@@ -33,8 +34,16 @@ function App() {
         <Route path="/blogs/">
             <Blog/>
         </Route>
+        <Route path="/ctfblogs/">
+        <div className="pt-10 ">
+          <CtfCards/>
+        </div>
+        </Route>
         <Route path="/test">
             <Pages/>
+        </Route>
+        <Route path="/slt">
+            <StlCards />
         </Route>
       </Switch>
       </div>
