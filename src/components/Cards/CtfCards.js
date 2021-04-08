@@ -4,6 +4,7 @@ import axios from "axios";
 
 const CtfCards = () => {
   const [repos, setrepos] = useState([]);
+  const blacklisted=['Projects']
   useEffect(() => {
     axios
       .get("https://api.github.com/repos/Captain-K-101/testrepo/git/trees/main")
@@ -29,6 +30,8 @@ const CtfCards = () => {
       </div>
       <section class="text-gray-600 body-font md:grid md:grid-cols-4 gap-4 mx-10">
         {repos.map((x, i) => (
+          <>
+          {!blacklisted.includes(x.path) &&(
           <div class="py-4 w-full h-full">
             <div class="shadow-lg group container  rounded-md bg-gray-200 dark:bg-gray-500 max-w-sm flex justify-center items-center  mx-auto ">
               <div>
@@ -58,7 +61,7 @@ const CtfCards = () => {
                       (document.location =
                         "/blogs/" + x.path + "/#" + x.url.split("trees/")[1])
                     }
-                    class="text-center rounded-lg p-4 bg-black dark:bg-white text-gray-700 text-white font-bold text-lg"
+                    class="text-center rounded-lg px-4 bg-black dark:bg-white text-gray-700 text-white font-bold text-lg"
                   >
                     More
                   </button>
@@ -66,6 +69,8 @@ const CtfCards = () => {
               </div>
             </div>
           </div>
+)}
+          </>
         ))}
       </section>
     </>

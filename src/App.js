@@ -1,7 +1,5 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import First from "./components/Heros/First";
-import Firstleft from "./components/Heros/Firstleft";
 import Blog from './components/Blog/Blog'
 import Pages from './components/Blog/Pages'
 import Banner from "./components/Heros/Banner";
@@ -11,7 +9,9 @@ import CtfCards from './components/Cards/CtfCards'
 import {useState,useEffect} from 'react'
 import Presenter from './components/Heros/Presenter'
 import StlCards from './components/Cards/StlCards'
-
+import ProjectCard from './components/Cards/ProjectCard'
+import Zoom from 'react-reveal/Zoom';
+import Footer from './components/Footer'
 function App() {
   
   
@@ -27,9 +27,10 @@ function App() {
           <Presenter />
           </div>
       <div className="underline text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl " align="center"> PROJECTS</div>
-          <First />
-          <Firstleft/>
+          <ProjectCard/>
+          <Zoom>
           <CtfCards/>
+          </Zoom>
         </Route>
         <Route path="/blogs/">
             <Blog/>
@@ -46,6 +47,7 @@ function App() {
             <StlCards />
         </Route>
       </Switch>
+      <Footer/>
       </div>
     </>
   );

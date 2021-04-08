@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image1 from "../../assets/logo.png";
+import image1 from "../../assets/logo1.png";
 import useDarkmode from "../../hooks/useDarkmode";
 import { Link } from "react-router-dom";
 
@@ -9,14 +9,14 @@ const Index = () => {
   // useDarkmode();
   return (
     <>
-      <div className="rounded-2xl">
-        <header class="fixed w-full dark:bg-black" style={{ "z-index": "1" }}>
-          <nav class="bg-gray-600 dark:bg-gray-800  shadow md:mx-6 mt-2 rounded-xl">
+      <div className="rounded-2xl ">
+        <header class="fixed w-full dark:bg-black " style={{ "z-index": "1", }}>
+          <nav class="bg-gray-600 dark:bg-gray-800  shadow md:mx-6 mt-2 rounded-xl" style={{"border-bottom": "3px solid #bd5505"}}>
             <div class="max-w-7xl mx-auto px-8">
               <div class="flex items-center justify-between h-16">
                 <div class="w-full justify-between flex items-center">
-                  <a class="flex-shrink-0 " href="/">
-                    <img class="h-14 w-14" src={image1} alt="Workflow" />
+                  <a class="flex-shrink-0  hover:scale-125" href="/">
+                    <img class="h-14 -mx-5 " src={image1} alt="Workflow" />
                   </a>
                   <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">

@@ -19,6 +19,7 @@
     "react-parallax-card": "^0.5.7",
     "react-parallax-tilt": "^1.4.95",
     "react-responsive-carousel": "^3.2.16",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-motion": "^0.2.1",

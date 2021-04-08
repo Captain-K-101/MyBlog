@@ -9,7 +9,7 @@ const Presenter = () => {
     <ScrollContainer>
       <ScrollPage page={0}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-          <span  className="md:text-5xl flex flex-wrap content-center fade-in-slow font-black text-5xl md:text-8xl">Hi Welcome to My Website</span>
+          <span   className="md:text-5xl flex flex-wrap content-center fade-in-slow font-black text-5xl md:text-8xl">Hi Welcome to My Website</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={1}>
@@ -41,14 +41,14 @@ const Presenter = () => {
       </ScrollPage>
       <ScrollPage page={6}>
         <Animator animation={FadeUp}>
-          <span style={{ fontSize: "2.5em" ,"margin-left":"0rem" }}>CTF Player<br/>(<span className="text-red-500">team bi0s</span>)<br/>🚩</span>
+          <span style={{ fontSize: "2.5em" ,"margin-left":"0rem" }} align="center">CTF Player<br/>(<span  className="text-red-500">team bi0s</span>)<br/><div align="center">🚩</div></span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={7}>
         <Animator animation={ZoomInScrollOut}>
           <span style={{ fontSize: "3em" }}>Contact me at</span>
           <span style={{ fontSize: "3em" }}>
-          <button class="fade-in-slow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button onClick={()=>window.open('https://www.linkedin.com/in/nikhil-nair-367336163/')} class="fade-in-slow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Resume
           </button>
           </span>
